@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingEnd="9dp">
+
+    <TextView
+        android:id="@+id/first_letter_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:paddingStart="2dp"
+        android:paddingLeft="2dp"
+        android:paddingTop="2dp"
+        android:paddingRight="2dp"
+        android:paddingBottom="1dp"
+        android:text="T"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/remaining_letter_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_toEndOf="@+id/first_letter_tv"
+        android:background="@drawable/horizontal_dashed_line"
+        android:fontFamily="@font/poppins_medium"
+        android:imeOptions="flagNavigateNext"
+        android:inputType="textNoSuggestions|text"
+        android:letterSpacing="0.36"
+        android:maxLines="1"
+        android:paddingTop="4dp"
+        android:textSize="15sp"
+        android:visibility="visible"
+        tools:ignore="UnusedAttribute" />
+</RelativeLayout>
